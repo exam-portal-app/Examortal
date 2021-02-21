@@ -1,15 +1,30 @@
 import mongoose from 'mongoose';
 
 const questionSchema = mongoose.Schema({
-    ques_type: Number,
-    message: String,
+    quesType: {
+        type: Number,
+        required: true
+    },
+    message: {
+        type: String,
+        required: true
+    },
     image: {
         type: String,
         default: null
     },
-    negative_marks: Number,
-    marks: Number,
-    answers: [String],
+    negativeMarks: {
+        type: Number,
+        required: true
+    },
+    marks: {
+        type: Number,
+        required: true
+    },
+    answers: {
+        type: [String],
+        required: true
+    },
 }
 );
 
