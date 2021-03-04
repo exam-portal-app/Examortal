@@ -1,1 +1,19 @@
- 
+.quesTile {
+  display: grid;
+  margin: 0.5rem;
+  background: #ef5350;
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  align-content: center;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(0, 0,0, 0.3);
+}
+
+.quesTile:hover {
+  background: #b61827;
+  color: #ffffff;
+}
